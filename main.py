@@ -38,3 +38,10 @@ class Users:
         Users.user_list.remove(self)
     
 
+
+
+#This is the the start of defination of anpther class(credentials)
+class Credentials:
+    """
+    this is a blue print of crendetials object
+    """
