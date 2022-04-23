@@ -2,6 +2,7 @@
 # This is the main module
 import random
 import pyperclip
+import string
 
 
 
@@ -100,4 +101,16 @@ class Credentials:
                 return True
             else:   
                 return False
+    
+    @classmethod
+    def display_credentials(cls):
+        """
+        Method that returns all items in the credentials list
+        """
+        return cls.credslist
+
+    def generatePassword(stringLength=9):
+        """Generate a random password string of letters and digits and special characters"""
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "k&%)@#$"
+        return ''.join(random.choice(password) for i in range(stringLength))
 
