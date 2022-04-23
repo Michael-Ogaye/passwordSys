@@ -1,5 +1,7 @@
 
 # This is the main module
+import random
+import string
 
 
 
