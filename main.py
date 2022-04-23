@@ -7,22 +7,34 @@ import string
 
 
 class Users:
+    """
+    This class creates new instances of the user
+    """
 
-   users=[]
-   def __init__(self,username,password):
+    user_list=[]
+    def __init__(self,username,password):
+        """
+        This is the users constructor it creates new instances of the user
+        """
 
         self.username=username
         self.password=password
 
-   def adduser (self,user):
-       if user not in  self.users:
-        self.users.append(user)
+    def adduser (self):
+        """
+        saves the usesrs entry to the users list
+        """
+       
+        self.users_list.append(self)
+
+    @classmethod
+    def display_user(cls):
+        return cls.user_list
+
+    def delete_user(self):
+        '''
+        delete_account method deletes a  saved account from the list
+        '''
+        Users.user_list.remove(self)
     
 
-user= input('Enter your user name:')
-password=input('Enter your password:')
-user1=Users(user,password)
-print(user1.password)
-print (user1.username)
-user1.adduser(user)
-print(user1.users)
