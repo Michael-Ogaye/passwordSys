@@ -25,7 +25,7 @@ class Users:
         saves the usesrs entry to the users list
         """
        
-        self.users_list.append(self)
+        self.user_list.append(self)
 
     @classmethod
     def display_user(cls):
