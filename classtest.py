@@ -2,6 +2,7 @@ import unittest
 from main import Users
 from main import Credentials
 
+
 class Testuser(unittest.TestCase):
     """
     A Test class that defines test cases for the User class.
