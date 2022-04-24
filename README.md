@@ -11,7 +11,7 @@
 ## Description
 <p>The passwordSys is a python made sytem that provides user with password management system create username and passwords</p>
 
-##Screenshot
+## Screenshot
 ![passytem](images/dest.png)
 
 ## set-up
