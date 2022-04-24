@@ -21,7 +21,7 @@ class Users:
         self.username=username
         self.password=password
 
-    def adduser (self):
+    def adduser(self):
         """
         saves the usesrs entry to the users list
         """
