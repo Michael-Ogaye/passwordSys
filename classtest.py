@@ -90,7 +90,7 @@ class TestCreds(unittest.TestCase):
         self.assertEqual(new_credential.account,test_credential.account)
 
 
-def test_credential_exist(self):
+    def test_credential_exist(self):
         """
         test to check if we can return a true or false based on whether we find or can't find the credential.
         """
@@ -99,6 +99,17 @@ def test_credential_exist(self):
         the_credential.save_details()
         credential_is_found = Credentials.if_credential_exist("pintrest")
         self.assertTrue(credential_is_found)
+    
+
+    def test_display_all_saved_credentials(self):
+        '''
+        method that displays all the credentials that has been saved by the user
+        '''
+
+        self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)
+
+if __name__ == "__main__":
+    unittest.main()
 
 
 
